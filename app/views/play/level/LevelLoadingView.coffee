@@ -229,6 +229,7 @@ module.exports = class LevelLoadingView extends CocoView
   onLoadError: (resource) ->
     @$el.find('.level-loading-goals, .tip, .progress-or-start-container').hide()
     @$el.find('.could-not-load').show()
+    alert(JSON.stringify(resource, null, 2)) if me.isSmokeTestUser()
 
   onClickStartSubscription: (e) ->
     @openModalView new SubscribeModal()

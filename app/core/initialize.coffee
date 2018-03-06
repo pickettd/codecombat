@@ -111,7 +111,7 @@ watchForErrors = ->
 
   showError = (text) ->
     return if currentErrors >= 3
-    return unless me.isAdmin() or document.location.href.search(/codecombat.com/) is -1 or document.location.href.search(/\/editor\//) isnt -1
+    return unless me.isAdmin() or me.isSmokeTestUser() or document.location.href.search(/codecombat.com/) is -1 or document.location.href.search(/\/editor\//) isnt -1
     ++currentErrors
     unless webkit?.messageHandlers  # Don't show these notys on iPad
       noty {
