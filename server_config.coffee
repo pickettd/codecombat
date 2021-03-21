@@ -36,12 +36,8 @@ config.mongo =
   analytics_host: process.env.COCO_MONGO_ANALYTICS_HOST or process.env.DATA_DB_HOST or 'localhost'
   analytics_db: process.env.COCO_MONGO_ANALYTICS_DATABASE_NAME or 'analytics'
   analytics_collection: process.env.COCO_MONGO_ANALYTICS_COLLECTION or 'analytics.log.event'
-  mongoose_replica_string: process.env.COCO_MONGO_MONGOOSE_REPLICA_STRING or process.env.MONGO_URL or ''
+  mongoose_replica_string: process.env.COCO_MONGO_MONGOOSE_REPLICA_STRING or ''
   readpref: process.env.COCO_MONGO_READPREF or 'primary'
-
-if process.env.LANDO_INFO?
-  config.mongo.host = 'database'
-  config.mongo.analytics_host = 'database'
 
 if process.env.COCO_MONGO_ANALYTICS_REPLICA_STRING?
   config.mongo.analytics_replica_string = process.env.COCO_MONGO_ANALYTICS_REPLICA_STRING

@@ -1,15 +1,15 @@
 {
-  "name": "codehaumana",
+  "name": "codecombat",
   "description": "A multiplayer programming game for learning how to code.",
   "author": "Nick Winter <nick@codecombat.com>",
-  "homepage": "https://github.com/pickettd/codecombat",
+  "homepage": "https://github.com/codecombat/codecombat",
   "domains": [
-    "code.haumana.io"
+    "codecombat.com"
   ],
   "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pickettd/codecombat"
+    "url": "https://github.com/codecombat/codecombat"
   },
   "contributors": [
     {
@@ -32,7 +32,6 @@
   "scripts": {
     "start": "node ./index.js",
     "test": "./node_modules/.bin/karma start",
-    "preinstall": "yarn config set ignore-engines true",
     "predeploy": "echo Starting deployment--hold onto your butts.; echo Skipping webpack build --production",
     "postdeploy": "echo Deployed. Unclench.",
     "postinstall": "bower --config.analytics=false install && webpack",
@@ -61,7 +60,7 @@
     "@vimeo/player": "^2.2.0",
     "JQDeferred": "~2.1.0",
     "ace-builds": "ajaxorg/ace-builds#ba3b91e04a5aa559d56ac70964f9054baa0f4caf",
-    "adobe-animate-parser": "file:vendor/packages/adobe-animate-parser",
+    "adobe-animate-parser": "github:codecombat/adobe-animate-parser#master",
     "aether": "~0.5.21",
     "algoliasearch": "^3.13.1",
     "async": "2.5.0",
@@ -142,9 +141,9 @@
     "tv4": "~1.0.16",
     "uglify-js": "^3.1.2",
     "underscore.string": "~2.3.3",
-    "vue": "2.6.10",
+    "vue": "^2.4.2",
     "vue-loader": "^13.6.1",
-    "vue-template-compiler": "2.6.10",
+    "vue-template-compiler": "^2.5.13",
     "vuex": "^2.4.0",
     "webpack": "^3.6.0",
     "webpack-shell-plugin": "^0.5.0",
@@ -162,7 +161,7 @@
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-vue": "^2.0.2",
-    "bower": "~1.8.8",
+    "bower": "~1.6.4",
     "bundle-loader": "^0.5.5",
     "commonjs-require-definition": "0.2.0",
     "compressible": "~1.0.1",
@@ -202,7 +201,7 @@
   "license": "MIT for the code, and CC-BY for the art and music",
   "private": true,
   "engines": {
-    "node": "6.17.1",
-    "yarn": "1.15.2"
+    "node": "^6.12.2",
+    "npm": "^3.10.10"
   }
 }
