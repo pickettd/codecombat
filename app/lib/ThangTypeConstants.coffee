@@ -20,7 +20,7 @@ ThangTypeConstants =
     champion: '575848b522179b2800efbfbf'
     'code-ninja': '58192d484954d56144a7062f'
     stalwart: '5a576ec52db68a00269b7a08'
-    alika: '5c40b2c38a0b8159b0408f8d'
+    alika: '5c75bae6459eba59b6790b39'
   heroClasses:
     Warrior: ['champion', 'duelist', 'captain', 'knight', 'samurai', 'raider', 'goliath', 'guardian', 'code-ninja', 'stalwart', 'alika']
     Ranger: ['ninja', 'forest-archer', 'trapper', 'pixie', 'assassin']
